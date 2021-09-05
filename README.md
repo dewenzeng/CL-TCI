@@ -2,7 +2,9 @@
 
 Implementation of paper "Contrastive Learning with Temporal Correlated Medical Images: A Case Study using Lung Segmentation in Chest X-Rays"
 
-![overview](figures/overview.png)
+<p align="center">
+  <img src="figures/overview.png" width="700">
+</p>
 
 ### Dataset
  - BCH-CXR: from Boston Children's Hospital (not public available because of privacy issue)
@@ -13,9 +15,13 @@ Implementation of paper "Contrastive Learning with Temporal Correlated Medical I
 
 Use python file in the `dataset` folder to preprocess the dataset, convert the original format to jpg or png and rename the files for cross validation training.
 ```
-python generate_jsrt_dataset.py --data_dir=d:/data/JSRT/All247images/ --label_dir=d:/data/JSRT/scratch/ --result_dir=d:/data/JSRT/converted_JSRT/
+python generate_jsrt_dataset.py --data_dir=d:/data/JSRT/All247images/ \
+--label_dir=d:/data/JSRT/scratch/ \
+--result_dir=d:/data/JSRT/converted_JSRT/
 
-python generate_montgomery_dataset.py --data_dir=d:/data/MontgomerySet/CXR_png  --label_dir=d:/data/MontgomerySet/ManualMask/  --result_dir=d:/data/MontgomerySet/converted_Montgomery/
+python generate_montgomery_dataset.py --data_dir=d:/data/MontgomerySet/CXR_png  \
+--label_dir=d:/data/MontgomerySet/ManualMask/  \
+--result_dir=d:/data/MontgomerySet/converted_Montgomery/
 ```
 
 ### Running
@@ -55,7 +61,9 @@ pretrained models can be found here: [google drive](https://drive.google.com/dri
 
 ### T-SNE plots
 
-![T-SNE](figures/tsne.jpg)
+<p align="center">
+  <img src="figures/tsne.jpg" width="800">
+</p>
 
 Each dot in the plot represents one CXR.
 The number beside each dot is the unique patient id, CXRs of the same patient are marked with the same color.

@@ -62,7 +62,7 @@ pretrained models can be found here: [google drive](https://drive.google.com/dri
 ### T-SNE plots
 
 <p align="center">
-  <img src="figures/tsne.jpg" width="800">
+  <img src="figures/tsne.jpg" width="600">
 </p>
 
 Each dot in the plot represents one CXR.

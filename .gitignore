@@ -1,0 +1,11 @@
+# results
+results/
+
+# tensorboard
+runs/
+
+# logs
+logs/
+
+# vscode
+.vscode/
